@@ -1,0 +1,22 @@
+{% extends "module/Base.html" %} {% block body_block %}
+
+<div class="jumbotron">
+  <div class="container">
+    <h1>Login IN</h1>
+    <form action="" method="POST" class="form">
+      {% csrf_token %}
+      <label for="username"> Enter Username:-</label>
+      <input
+        type="text"
+        name="username"
+        class="form-control"
+        placeholder="Enter Username"
+        required
+      />
+      <label for="password">Enter Password:-</label>
+      <input type="password" name="password" class="form-control" required />
+      <input type="submit" value="Login" class="btn btn-primary" />
+    </form>
+  </div>
+</div>
+{% endblock %}

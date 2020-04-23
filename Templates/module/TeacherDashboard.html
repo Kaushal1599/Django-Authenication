@@ -1,0 +1,10 @@
+{% extends "module/Base.html" %} {% block body_block %} {% load static %} {%
+csrf_token %}
+<div class="container">
+  <div class="jumbotron">
+    <h1>This is Teacher Dashboard!!</h1>
+    <h1>{{ post.Profile }}</h1>
+    <img src="{{  post.profile_pic.url  }}" alt="profile_pic" />
+  </div>
+</div>
+{% endblock body_block %}
